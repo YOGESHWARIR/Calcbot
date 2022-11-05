@@ -37,4 +37,14 @@ while True:
         split_msg=msg.split()
         a1=float(split_msg[1])
         print(math.sqrt(a1))
+    elif "mod" in msg:
+        split_msg=msg.split()
+        a1=float(split_msg[1])
+        a2=float(split_msg[2])
+        print(a1%a2)
+    elif "numsq" in msg:
+        split_msg=msg.split()
+        a1=float(split_msg[1])
+        print(a1*a1)
+        
         
