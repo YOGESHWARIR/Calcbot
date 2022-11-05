@@ -1,0 +1,40 @@
+'''calcbot.py -echo user input
+add
+multiply
+'''
+import math
+from greet_random import *
+quit_msg=['quit','bye','exit']
+greeting = greet_random()
+print(greeting,',', "I am a calbot. Can do simple calculations for you")
+while True:
+    msg=input()
+    if msg in quit_msg:
+        break
+    elif "add" in msg:
+        #print(msg)
+        split_msg=msg.split()
+        #print(split_msg)
+        a1=float(split_msg[1])
+        a2=float(split_msg[2])
+        print(a1+a2)
+    elif "div" in msg:
+        split_msg=msg.split()
+        a1=float(split_msg[1])
+        a2=float(split_msg[2])
+        print(a1/a2)
+    elif "mul" in msg:
+        split_msg=msg.split()
+        a1=float(split_msg[1])
+        a2=float(split_msg[2])
+        print(a1*a2)
+    elif "sub" in msg:
+        split_msg=msg.split()
+        a1=float(split_msg[1])
+        a2=float(split_msg[2])
+        print(a1-a2)
+    elif "sqrt" in msg:
+        split_msg=msg.split()
+        a1=float(split_msg[1])
+        print(math.sqrt(a1))
+        
